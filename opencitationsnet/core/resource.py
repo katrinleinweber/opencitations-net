@@ -51,7 +51,7 @@ class JournalArticle(object):
     def identifiers(self):
         ret = []
         if self.prism_doi:
-            ret.append(('DOI', self.prism_doi, 'http://dx.doi.org/%s' % self.prism_doi))
+            ret.append(('DOI', self.prism_doi, 'https://doi.org/%s' % self.prism_doi))
         if self.fabio_hasPubMedId:
             ret.append(('PMID', self.fabio_hasPubMedId, 'http://www.ncbi.nlm.nih.gov/pubmed/%s' % self.fabio_hasPubMedId))
         if self.fabio_hasPubMedCentralId:
